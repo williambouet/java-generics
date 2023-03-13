@@ -44,11 +44,11 @@ public class DemoApplication {
 
 
 		// Second exemple avec des génériques
-		GenericFixedSizeList<Apple> genericFixedSizeList = new GenericFixedSizeList(Apple.class, 5 );
+		GenericFixedSizeList<Apple> genericFixedSizeList = new GenericFixedSizeList<Apple>(Apple.class, 5 );
 		genericFixedSizeList.add(apple1);
 		System.out.println("le fruit est de type " +  genericFixedSizeList.get(0).getClass().getName());
 		
-		GenericFixedSizeList<Banana> genericFixedSizeListOfBanana = new GenericFixedSizeList(Banana.class, 5 );
+		GenericFixedSizeList<Banana> genericFixedSizeListOfBanana = new GenericFixedSizeList<Banana>(Banana.class, 5 );
 		genericFixedSizeListOfBanana.add(banana1);
 		System.out.println("le fruit est de type " +  genericFixedSizeListOfBanana.get(0).getClass().getName());
 
